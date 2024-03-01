@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+body {
+  height: 100vh;
+  background-image: url(img/icon.png);
+  background-size: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+    
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 25px;
+  width: 300px;
+
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+.container h1 {
+  text-align: center;
+  color: #fafafa;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  border-bottom: 4px solid cadetblue;  
+}
+.container label {
+  text-align: left;
+  color: white;
+}
+.container form input {
+  width: calc(100% - 20px);
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid cadetblue;
+  color: #fff;
+  font-size: 20px;
+}
+.container form button {
+  width: 100%;
+  padding: 5px 0;
+  border: none;
+  background-color: cadetblue ;
+  font-size: 18px;
+  color: #fafafa;
+}
+.container ul.lol{
+  flex: 1;
+  text-align: center;
+}
+.container ul.lol li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.container ul.lol li button{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 20px;
+  background: cadetblue;
+  position: relative;
+  cursor: pointer;
+}
+.container ul.lol li button:hover{
+  border: 1px solid #fff;
+  background: green;
+  transition: 1s;
+}
+.container ul.lolo{
+  text-align: center;
+  letter-spacing: 3px;
+}
+.container ul.lolo li a{
+  color: #fff;
+}
+@media(max-width: 110px){
+  body {
+    height: 100vh;
+    background-image: url(img/icon.png);
+    background-size: 1700px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .container h1 {
+    text-align: center;
+    color: #fafafa;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-bottom: 4px solid cadetblue;  
+  }
+  .container label {
+    text-align: left;
+    color: white;
+  }
+  .container form input {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid cadetblue;
+    color: #fff;
+    font-size: 20px;
+  }
+  .container form button {
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    background-color: cadetblue ;
+    font-size: 18px;
+    color: #fafafa;
+  }
+  .container ul.lol{
+    flex: 1;
+    text-align: center;
+  }
+  .container ul.lol li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .container ul.lol li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: cadetblue;
+    position: relative;
+    cursor: pointer;
+  }
+  .container ul.lol li a:hover{
+    border: 1px solid #fff;
+    background: green;
+    transition: 1s;
+  }
+  .container ul.lolo{
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  .container ul.lolo li a{
+    color: #fff;
+  }
+}
+
+

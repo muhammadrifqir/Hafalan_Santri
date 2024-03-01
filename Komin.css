@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+.wrapper{
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+}
+.collab{
+    max-width: 450px;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.collab label{
+    position: relative;
+    font-weight: 600;
+    background: cadetblue;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    color: #1c1c6b;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+.collab label::after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    background: url(img/arrow.svg) no-repeat 0 0; 
+}
+
+.collab-text{
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.collab input:checked ~ .collab-text{
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: cadetblue;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    opacity: 1;
+    top: 0;
+}
+.collab-text h2{
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color: #1c1c6b;
+}
+
+.collab-text p{
+    padding-left: 15px;
+    padding-right: 15px;
+    color: black;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Halaman Login</title>
+    <link rel="stylesheet" href="login 1style.css" />
+    <script type="text/javascript" src="jquery.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Login</h1>
+      <form action="index.html" method="post">
+        <label>Username / Email</label><br />
+        <input type="email" name="email" id="email"><br />
+        <label>Password</label><br />
+        <input type="password" name="password" id="password"/><br />
+        <ul class="lol">
+          <span class="error_msg">Username atau Password salah, ulangin lagi</span>
+          <li><button>Login</button></li>
+        </ul>
+          <ul class="lolo">
+           <li><a href="Forget.html"><br>Lupa Akun?</a></li>
+           <li><a href="Register.html"><br>Belum punya akun? Daftar</a></li>
+          </ul>
+        </ul>
+      </form>
+    </div>
+
+    <script>
+      var input_email = document.querySelector('#input_email,');
+      var input_password = document.querySelector('#input_password');
+      var error_msg = document.querySelector(".error_msg");
+
+      $("#submit").submit(function (e){
+        e.preventDefault();
+
+        if (input_email.value.length < 1) {
+          error_msg.style.display = "inline-block";
+        }
+
+        if (input_password.value.length < 1) {
+          error_msg.style.display = "inline-block";
+        }
+
+        error_msg.style.display = "none";
+        alert("Login Succesfully");
+      })
+    </script>
+  </body>
+</html>
